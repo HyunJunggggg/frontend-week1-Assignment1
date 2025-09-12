@@ -1,0 +1,98 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1em;
+  min-height: inherit;
+}
+
+h1 {
+  color: lightsalmon;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+  color: lightsalmon;
+}
+
+.header {
+  border-bottom: 10px dotted lightsalmon;
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 10px 20px;
+  flex: 1;
+}
+
+.book {
+  margin: 10px auto;
+  width: 300px;
+  padding: 5px;
+  border: 1px solid;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  background-color: black;
+  color: lightsalmon;
+  padding: 16px;
+  margin: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+.button {
+  align-self: center;
+  background-color: lightsalmon;
+  color: black;
+  padding: 16px 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 300px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: lightsalmon;
+  text-align: center;
+  padding: 1em;
+}
+
+.hover-button {
+  background-color: black;
+  color: lightsalmon;
+  border: 1px solid black;
+
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+/* hover 상태 */
+.hover-button:hover {
+  background-color: lightsalmon;
+  border: 1px solid lightsalmon;
+  color: black;
+  border-radius: 20%;
+  font-size: 2rem;
+}
