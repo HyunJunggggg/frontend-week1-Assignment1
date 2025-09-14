@@ -11,8 +11,6 @@ function App() {
         <HoverButton />
         <BookList isbn="9781484292464" />
         <BookList isbn="9781484289822" />
-        {/* <BookList author="By Daniel Irvine" />
-      <SecondBookList author="By Sujay Raghavendra" /> */}
       </div>
       <footer className="footer">
         <p>© Hyunjung Shin, 2025</p>

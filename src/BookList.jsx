@@ -13,7 +13,6 @@ function BookList({isbn}) {
     return <div className='book'>Loading...</div>;
   }
 
-//   const buttonLabel = "Read More"; 
 
   return (
     <div className="book">
